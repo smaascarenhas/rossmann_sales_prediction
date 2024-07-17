@@ -10,7 +10,9 @@ Após entender a questão de negócio, conclui que a solução do CFO realmente 
 
 # 📋 Qual o meu plano para resolver o problema?
 Meu planejamento é aplicar o método cíclico CROSS-INDUSTRY PROCESS-DATA SCIENCE (CRISP-DS) que tem o objetivo de terminar o primeiro ciclo end-to-end de maneira rápida com os dados disponíveis para mapear todos os problemas que podem estar em diferentes etapas do projeto e entregar valor rápido para os stakeholders.
+
 ![crisp_ds](img/crisp_ds.png)
+---
 
 # 🎯 Como pretendo entregar isso funcionando?
 Pretendo entregar um bot no telegram, disponível em mãos a qualquer momento onde o CFO possa interagir com o bot e receber em tempo real o valor da previsão da respectiva loja.
@@ -52,11 +54,12 @@ Pretendo entregar um bot no telegram, disponível em mãos a qualquer momento on
 - **Anaconda:** Programa de gerenciamento de ambientes virtuais no Windows, facilitando a gestão de pacotes e dependências.
 
 ## API e integração com Bot no telegram
-**Flask:** Framework web em Python utilizado para criação de APIs e aplicações web
-**Telegram bot:** Integração de bot no Telegram para interação com usuários através de mensagens.
+- **Flask:** Framework web em Python utilizado para criação de APIs e aplicações web.
+- **Telegram bot:** Integração de bot no Telegram para interação com usuários através de mensagens.
 
 ## Deploy do modelo e do Bot
-**Render:** Plataforma que oferece serviços para criação de web services e aplicações web
+- **Render:** Plataforma que oferece serviços para criação de web services e aplicações web
+---
 
 # 💡 Top 3 Insights
 ## Competidores Próximos Aumentam as Vendas
@@ -67,6 +70,7 @@ Pretendo entregar um bot no telegram, disponível em mãos a qualquer momento on
 
 ## Lojas vendem menos no segundo semestre do ano
 ![month_sales](img/month_sales.png)
+---
 
 # 🤖 Machine Learning Modelling
 ## Cross Validation
@@ -82,13 +86,13 @@ Implementei os 5 melhores modelos, começando pelos mais simples para verificar 
 - Random Forest Regressor
 - XGBoost Regressor
 
-| Model Name              | MAE CV               | MAPE CV              | RMSE CV              |
-|-------------------------|----------------------|----------------------|----------------------|
-| Random Forest Regressor | 696.29+/-0.0         | 0.1+/-0.0            | 1003.2+/-0.0         |
-⁠| Average Model             1354.800353⁠⁠            0.2064                 1835.135542
-| XGBoost Regressor       | 1858.17+/-290.66     | 0.25+/-0.01          | 2686.29+/-432.14    |
-| Linear Regression       | 2081.73+/-295.63     | 0.3+/-0.02           | 2952.52+/-468.37    |
-| Lasso                   | 2116.38+/-341.5      | 0.29+/-0.01          | 3057.75+/-504.26    |
+| Model Name              | MAE CV            | MAPE CV         | RMSE CV            |
+|-------------------------|-------------------|-----------------|--------------------|
+| Random Forest Regressor | 696.29 ± 0.0      | 0.1 ± 0.0       | 1003.2 ± 0.0       |
+| Average Model           | 1354.800353       | 0.2064          | 1835.135542        |
+| XGBoost Regressor       | 1858.17 ± 290.66  | 0.25 ± 0.01     | 2686.29 ± 432.14   |
+| Linear Regression       | 2081.73 ± 295.63  | 0.3 ± 0.02      | 2952.52 ± 468.37   |
+| Lasso                   | 2116.38 ± 341.5   | 0.29 ± 0.01     | 3057.75 ± 504.26   |
 
 ## Modelo Final
 O modeo XGBoost apresentou a segunda melhor performance, mas decidi continuar com ele devido ao seu custo computacional e de armazenamento menor.
@@ -96,6 +100,7 @@ O modeo XGBoost apresentou a segunda melhor performance, mas decidi continuar co
 | Model Name          | MAE        | MAPE     | RMSE       |
 |---------------------|------------|----------|------------|
 | XGBoost Regressor   | 711.261772 | 0.104962 | 1040.146127|
+---
 
 # 💲 Business Performance
 Essa foi a soma total das previsões de todas as lojas com um erro médio de aproximadamente 10% por loja, esse erro pode ser tanto para cima quanto para baixo como mostrado na tabela.  
@@ -107,7 +112,9 @@ Essa foi a soma total das previsões de todas as lojas com um erro médio de apr
 | best_scenario   | R$285,626,620.68   |
 
 # 📲 Produto final
-O produto final do projeto é a integração de um bot no Telegram para interação com usuários através de mensagens. Assim o CFO e outros stakeholders podem ter acesso às previsões do modelo na palma da mão em qualquer lugar com acesso à internet.
+O produto final que desenvolvi foi um bot no Telegram com interação com usuários através de mensagens. Basta fornecer o código da loja e o bot retorna a previsão correspondente para as próximas 6 semanas.
+
+Você pode conferir no vídeo abaixo que o produto final desse projeto funciona bem e retorna as previsões de maneira rápida, fácil e acessível na palma da mão, precisando apenas de acesso à internet.
 
 ![Nome do GIF](img/rossmann_bot_gif.gif)
 
@@ -121,7 +128,7 @@ Outro ponto importante foram os insights que descobri na Análise exploratória 
 - Lojas com mais promoções consecutivas vendem menos
 - Lojas vendem menos no segundo semestre do ano
 
-# 🎯 Próximos Passos
+# 🔎 Próximos Passos
 No segundo ciclo do CRISP-DS buscarei implementar as seguintes melhorias
 - **Testar outros modelos de Machine learning:** Explorar diferentes algoritmos e identificar se algum deles oferece uma performance melhor.
 - **Testar novos métodos de hyperparameter fine-tunning:** Experimentar novas técnicas de ajuste de hiperparâmetros como Baesyan Optimization.
