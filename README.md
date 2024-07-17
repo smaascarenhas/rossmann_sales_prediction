@@ -95,7 +95,7 @@ Implementei os 5 melhores modelos, começando pelos mais simples para verificar 
 | Lasso                   | 2116.38 ± 341.5   | 0.29 ± 0.01     | 3057.75 ± 504.26   |
 
 ## Modelo Final
-O modeo XGBoost apresentou a segunda melhor performance, mas decidi continuar com ele devido ao seu custo computacional e de armazenamento menor.
+Após a etapa de hyperparameter fine-tunning, o modeo XGBoost apresentou uma boa performance e decidi continuar com ele devido ao seu custo computacional e de armazenamento menor.
 
 | Model Name          | MAE        | MAPE     | RMSE       |
 |---------------------|------------|----------|------------|
